@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Meowly – Purrfect picks, delivered fast.</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+</head>
+
+<body>
+
+  <!-- TOAST -->
+  <div id="toast-wrap" class="toast-wrap"></div>
+
+  <!-- ══════════════════════════════════════════════════
+  PAGE: SPLASH
+══════════════════════════════════════════════════ -->
+  <div id="pg-splash" class="page">
+    <div class="auth-wrap">
+      <div class="auth-panel">
+        <div class="ap-brand">
+          <div class="wordmark">Meowly</div>
+          <div class="tagline">"Purrfect picks, delivered fast."</div>
+        </div>
+        <div class="ap-illo">
+          <svg viewBox="0 0 560 520" xmlns="http://www.w3.org/2000/svg" style="animation:sway 5s ease-in-out infinite;">
+            <ellipse cx="280" cy="510" rx="220" ry="14" fill="rgba(0,0,0,.14)" />
+            <path d="M248 310 Q240 380 235 510 L325 510 Q320 380 312 310 Z" fill="#5d3a1a" />
+            <path d="M258 330 Q254 360 252 400 L268 400 Q266 365 264 335 Z" fill="#4a2e14" />
+            <ellipse cx="250" cy="505" rx="25" ry="8" fill="#4a2e14" opacity=".6" />
+            <ellipse cx="310" cy="505" rx="22" ry="7" fill="#4a2e14" opacity=".6" />
+            <ellipse cx="280" cy="260" rx="195" ry="175" fill="#2d6a30" />
+            <ellipse cx="220" cy="290" rx="150" ry="165" fill="#33703a" />
+            <ellipse cx="340" cy="255" rx="165" ry="150" fill="#3a7a3d" />
+            <ellipse cx="280" cy="210" rx="170" ry="155" fill="#43a047" />
+            <ellipse cx="255" cy="175" rx="140" ry="130" fill="#4caf50" />
+            <ellipse cx="295" cy="155" rx="130" ry="120" fill="#57bb5c" />
+            <ellipse cx="268" cy="128" rx="85" ry="78" fill="#66bb6a" />
+            <ellipse cx="260" cy="110" rx="52" ry="48" fill="#76c87a" />
+            <ellipse cx="245" cy="98" rx="26" ry="22" fill="rgba(255,255,255,.1)" />
+            <circle cx="195" cy="195" r="10" fill="#e53935" opacity=".85" />
+            <circle cx="192" cy="194" r="4" fill="rgba(255,255,255,.3)" />
+            <circle cx="355" cy="210" r="9" fill="#e53935" opacity=".8" />
+            <circle cx="352" cy="209" r="3" fill="rgba(255,255,255,.3)" />
+            <circle cx="230" cy="145" r="8" fill="#e53935" opacity=".75" />
+            <circle cx="310" cy="248" r="7" fill="#e53935" opacity=".7" />
+            <ellipse cx="282" cy="490" rx="82" ry="66" fill="#f5c98a" />
+            <ellipse cx="282" cy="498" rx="52" ry="40" fill="#fad9a8" />
+            <ellipse cx="235" cy="505" rx="22" ry="12" fill="#f5c98a" transform="rotate(-18,235,505)" />
+            <ellipse cx="330" cy="505" rx="22" ry="12" fill="#f5c98a" transform="rotate(18,330,505)" />
+            <ellipse cx="226" cy="510" rx="16" ry="9" fill="#f0bc78" />
+            <ellipse cx="338" cy="510" rx="16" ry="9" fill="#f0bc78" />
+            <path d="M358 470 Q415 420 395 370 Q380 340 365 360" stroke="#f5c98a" stroke-width="22" fill="none" stroke-linecap="round" />
+            <path d="M358 470 Q415 420 395 370 Q380 340 365 360" stroke="#f0bc78" stroke-width="10" fill="none" stroke-linecap="round" />
+            <ellipse cx="282" cy="408" rx="65" ry="62" fill="#f5c98a" />
+            <ellipse cx="240" cy="428" rx="22" ry="16" fill="#f0bc78" opacity=".6" />
+            <ellipse cx="324" cy="428" rx="22" ry="16" fill="#f0bc78" opacity=".6" />
+            <polygon points="228,374 208,334 252,362" fill="#f5c98a" />
+            <polygon points="234,371 218,340 250,360" fill="#f2aa88" />
+            <polygon points="218,368 208,338 240,358" fill="#f7b0a0" opacity=".8" />
+            <polygon points="336,374 356,334 312,362" fill="#f5c98a" />
+            <polygon points="330,371 346,340 314,360" fill="#f2aa88" />
+            <polygon points="346,368 356,338 324,358" fill="#f7b0a0" opacity=".8" />
+            <rect x="226" y="398" width="36" height="22" rx="8" fill="#111" />
+            <rect x="270" y="398" width="36" height="22" rx="8" fill="#111" />
+            <line x1="262" y1="408" x2="270" y2="408" stroke="#1a1a1a" stroke-width="3" />
+            <rect x="260" y="406" width="12" height="4" rx="2" fill="#333" />
+            <ellipse cx="238" cy="405" rx="7" ry="6" fill="rgba(255,255,255,.22)" />
+            <ellipse cx="282" cy="405" rx="7" ry="6" fill="rgba(255,255,255,.22)" />
+            <ellipse cx="282" cy="424" rx="7" ry="5" fill="#e89090" />
+            <path d="M272,430 Q282,440 292,430" stroke="#c06050" stroke-width="2.5" fill="none" stroke-linecap="round" />
+            <line x1="282" y1="424" x2="282" y2="430" stroke="#c06050" stroke-width="2" />
+            <line x1="208" y1="418" x2="265" y2="422" stroke="rgba(255,255,255,.65)" stroke-width="2" />
+            <line x1="208" y1="427" x2="265" y2="426" stroke="rgba(255,255,255,.65)" stroke-width="2" />
+            <line x1="208" y1="436" x2="265" y2="430" stroke="rgba(255,255,255,.55)" stroke-width="1.5" />
+            <line x1="299" y1="422" x2="358" y2="418" stroke="rgba(255,255,255,.65)" stroke-width="2" />
+            <line x1="299" y1="426" x2="358" y2="427" stroke="rgba(255,255,255,.65)" stroke-width="2" />
+            <line x1="299" y1="430" x2="358" y2="436" stroke="rgba(255,255,255,.55)" stroke-width="1.5" />
+          </svg>
+        </div>
+      </div>
+      <div class="auth-form-side">
+        <p class="hello-txt">Hello! 👋</p>
+        <p class="hello-sub">Who are you signing in as?</p>
+        <div class="role-grid">
+          <div class="role-btn" onclick="selectRole('employee')">
+            <div class="r-icon">👔</div>
+            <div class="r-title">Employee</div>
+            <div class="r-sub">Staff portal</div>
+          </div>
+          <div class="role-btn" onclick="selectRole('customer')">
+            <div class="r-icon">🐾</div>
+            <div class="r-title">Customer</div>
+            <div class="r-sub">Book &amp; shop</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+  PAGE: EMPLOYEE LOGIN
+══════════════════════════════════════════════════ -->
+  <div id="pg-emp-login" class="page">
+    <div class="auth-wrap">
+      <div class="auth-panel">
+        <div class="ap-brand">
+          <div class="wordmark">Meowly</div>
+          <div class="tagline">Employee Portal</div>
+        </div>
+        <div class="ap-illo">
+          <svg viewBox="0 0 560 520" xmlns="http://www.w3.org/2000/svg" style="animation:sway 5s ease-in-out infinite;">
+            <ellipse cx="280" cy="510" rx="220" ry="14" fill="rgba(0,0,0,.14)" />
+            <path d="M248 310 Q240 380 235 510 L325 510 Q320 380 312 310 Z" fill="#5d3a1a" />
+            <ellipse cx="280" cy="260" rx="195" ry="175" fill="#2d6a30" />
+            <ellipse cx="220" cy="290" rx="150" ry="165" fill="#33703a" />
+            <ellipse cx="340" cy="255" rx="165" ry="150" fill="#3a7a3d" />
+            <ellipse cx="280" cy="210" rx="170" ry="155" fill="#43a047" />
+            <ellipse cx="255" cy="175" rx="140" ry="130" fill="#4caf50" />
+            <ellipse cx="295" cy="155" rx="130" ry="120" fill="#57bb5c" />
+            <ellipse cx="268" cy="128" rx="85" ry="78" fill="#66bb6a" />
+            <ellipse cx="260" cy="110" rx="52" ry="48" fill="#76c87a" />
+            <ellipse cx="245" cy="98" rx="26" ry="22" fill="rgba(255,255,255,.1)" />
+            <ellipse cx="282" cy="490" rx="82" ry="66" fill="#f5c98a" />
+            <ellipse cx="282" cy="498" rx="52" ry="40" fill="#fad9a8" />
+            <ellipse cx="235" cy="505" rx="22" ry="12" fill="#f5c98a" transform="rotate(-18,235,505)" />
+            <ellipse cx="330" cy="505" rx="22" ry="12" fill="#f5c98a" transform="rotate(18,330,505)" />
+            <path d="M358 470 Q415 420 395 370 Q380 340 365 360" stroke="#f5c98a" stroke-width="22" fill="none" stroke-linecap="round" />
+            <ellipse cx="282" cy="408" rx="65" ry="62" fill="#f5c98a" />
+            <polygon points="228,374 208,334 252,362" fill="#f5c98a" />
+            <polygon points="218,368 208,338 240,358" fill="#f7b0a0" opacity=".8" />
+            <polygon points="336,374 356,334 312,362" fill="#f5c98a" />
+            <polygon points="346,368 356,338 324,358" fill="#f7b0a0" opacity=".8" />
+            <rect x="226" y="398" width="36" height="22" rx="8" fill="#111" />
+            <rect x="270" y="398" width="36" height="22" rx="8" fill="#111" />
+            <line x1="262" y1="408" x2="270" y2="408" stroke="#333" stroke-width="3" />
+            <ellipse cx="238" cy="405" rx="7" ry="6" fill="rgba(255,255,255,.22)" />
+            <ellipse cx="282" cy="405" rx="7" ry="6" fill="rgba(255,255,255,.22)" />
+            <ellipse cx="282" cy="424" rx="7" ry="5" fill="#e89090" />
+            <path d="M272,430 Q282,440 292,430" stroke="#c06050" stroke-width="2.5" fill="none" stroke-linecap="round" />
+            <line x1="208" y1="422" x2="265" y2="424" stroke="rgba(255,255,255,.6)" stroke-width="2" />
+            <line x1="299" y1="424" x2="358" y2="422" stroke="rgba(255,255,255,.6)" stroke-width="2" />
+          </svg>
+        </div>
+      </div>
+      <div class="auth-form-side">
+        <div class="auth-card">
+          <h2>Employee Login</h2>
+          <div class="f-group"><label>Employee ID</label><input type="text" id="ei-id" placeholder="10001234" /></div>
+          <div class="f-group"><label>Password</label><input type="password" id="ei-pass" placeholder="••••••••" /></div>
+          <div class="check-row">
+            <label><input type="checkbox" id="ei-terms" /> Agree to terms &amp; conditions</label>
+            <span class="link-sm">Forgot password?</span>
+          </div>
+          <hr class="divider" />
+          <div class="btn-row">
+            <button class="btn btn-sage" onclick="empLogin()">Sign In</button>
+            <button class="btn btn-ghost" onclick="show('pg-emp-signup')">Sign Up</button>
+          </div>
+          <div style="text-align:center"><button class="btn-back" onclick="goBack()">← Back to home</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+  PAGE: EMPLOYEE SIGNUP
+══════════════════════════════════════════════════ -->
+  <div id="pg-emp-signup" class="page">
+    <div class="auth-wrap">
+      <div class="auth-panel">
+        <div class="ap-brand">
+          <div class="wordmark">Meowly</div>
+          <div class="tagline">Join the team</div>
+        </div>
+        <div class="ap-illo">
+          <svg viewBox="0 0 560 520" xmlns="http://www.w3.org/2000/svg" style="animation:sway 5s ease-in-out infinite;">
+            <ellipse cx="280" cy="510" rx="220" ry="14" fill="rgba(0,0,0,.14)" />
+            <path d="M248 310 Q240 380 235 510 L325 510 Q320 380 312 310 Z" fill="#5d3a1a" />
+            <ellipse cx="280" cy="260" rx="195" ry="175" fill="#2d6a30" />
+            <ellipse cx="280" cy="210" rx="170" ry="155" fill="#43a047" />
+            <ellipse cx="255" cy="175" rx="140" ry="130" fill="#4caf50" />
+            <ellipse cx="268" cy="128" rx="85" ry="78" fill="#66bb6a" />
+            <ellipse cx="282" cy="490" rx="82" ry="66" fill="#f5c98a" />
+            <ellipse cx="282" cy="498" rx="52" ry="40" fill="#fad9a8" />
+            <path d="M358 470 Q415 420 395 370 Q380 340 365 360" stroke="#f5c98a" stroke-width="22" fill="none" stroke-linecap="round" />
+            <ellipse cx="282" cy="408" rx="65" ry="62" fill="#f5c98a" />
+            <polygon points="228,374 208,334 252,362" fill="#f5c98a" />
+            <polygon points="336,374 356,334 312,362" fill="#f5c98a" />
+            <rect x="226" y="398" width="36" height="22" rx="8" fill="#111" />
+            <rect x="270" y="398" width="36" height="22" rx="8" fill="#111" />
+            <line x1="262" y1="408" x2="270" y2="408" stroke="#333" stroke-width="3" />
+            <ellipse cx="282" cy="424" rx="7" ry="5" fill="#e89090" />
+            <path d="M272,430 Q282,440 292,430" stroke="#c06050" stroke-width="2.5" fill="none" stroke-linecap="round" />
+          </svg>
+        </div>
+      </div>
+      <div class="auth-form-side">
+        <div class="auth-card" style="max-width:460px;">
+          <h2>Employee Registration</h2>
+          <div class="f-row">
+            <div class="f-group"><label>First Name</label><input type="text" id="er-fn" placeholder="Juan" /></div>
+            <div class="f-group"><label>Last Name</label><input type="text" id="er-ln" placeholder="dela Cruz" /></div>
+          </div>
+          <div class="f-row">
+            <div class="f-group"><label>Date of Birth</label><input type="date" id="er-dob" /></div>
+            <div class="f-group"><label>Gender</label>
+              <select id="er-gen">
+                <option value="">Select…</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="f-group"><label>Email</label><input type="email" id="er-email" placeholder="juan@meowly.com" /></div>
+          <div class="f-group"><label>Password</label><input type="password" id="er-pass" placeholder="Minimum 6 characters" /></div>
+          <hr class="divider" />
+          <div class="btn-row">
+            <button class="btn btn-ghost" onclick="show('pg-emp-login')">Sign In</button>
+            <button class="btn btn-sage" id="btn-emp-signup" onclick="empSignUp()">Create Account</button>
+          </div>
+          <div style="text-align:center"><button class="btn-back" onclick="goBack()">← Back to home</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+  PAGE: CUSTOMER LOGIN
+══════════════════════════════════════════════════ -->
+  <div id="pg-cust-login" class="page">
+    <div class="auth-wrap">
+      <div class="auth-panel">
+        <div class="ap-brand">
+          <div class="wordmark">Meowly</div>
+          <div class="tagline">"Purrfect picks, delivered fast."</div>
+        </div>
+        <div class="ap-illo">
+          <svg viewBox="0 0 560 520" xmlns="http://www.w3.org/2000/svg" style="animation:sway 5s ease-in-out infinite;">
+            <ellipse cx="280" cy="510" rx="220" ry="14" fill="rgba(0,0,0,.14)" />
+            <path d="M248 310 Q240 380 235 510 L325 510 Q320 380 312 310 Z" fill="#5d3a1a" />
+            <ellipse cx="280" cy="260" rx="195" ry="175" fill="#2d6a30" />
+            <ellipse cx="220" cy="290" rx="150" ry="165" fill="#33703a" />
+            <ellipse cx="340" cy="255" rx="165" ry="150" fill="#3a7a3d" />
+            <ellipse cx="280" cy="210" rx="170" ry="155" fill="#43a047" />
+            <ellipse cx="255" cy="175" rx="140" ry="130" fill="#4caf50" />
+            <ellipse cx="268" cy="128" rx="85" ry="78" fill="#66bb6a" />
+            <ellipse cx="245" cy="98" rx="26" ry="22" fill="rgba(255,255,255,.1)" />
+            <ellipse cx="282" cy="490" rx="82" ry="66" fill="#f5c98a" />
+            <ellipse cx="282" cy="498" rx="52" ry="40" fill="#fad9a8" />
+            <ellipse cx="235" cy="505" rx="22" ry="12" fill="#f5c98a" transform="rotate(-18,235,505)" />
+            <ellipse cx="330" cy="505" rx="22" ry="12" fill="#f5c98a" transform="rotate(18,330,505)" />
+            <path d="M358 470 Q415 420 395 370 Q380 340 365 360" stroke="#f5c98a" stroke-width="22" fill="none" stroke-linecap="round" />
+            <ellipse cx="282" cy="408" rx="65" ry="62" fill="#f5c98a" />
+            <polygon points="228,374 208,334 252,362" fill="#f5c98a" />
+            <polygon points="218,368 208,338 240,358" fill="#f7b0a0" opacity=".8" />
+            <polygon points="336,374 356,334 312,362" fill="#f5c98a" />
+            <polygon points="346,368 356,338 324,358" fill="#f7b0a0" opacity=".8" />
+            <rect x="226" y="398" width="36" height="22" rx="8" fill="#111" />
+            <rect x="270" y="398" width="36" height="22" rx="8" fill="#111" />
+            <line x1="262" y1="408" x2="270" y2="408" stroke="#333" stroke-width="3" />
+            <ellipse cx="238" cy="405" rx="7" ry="6" fill="rgba(255,255,255,.22)" />
+            <ellipse cx="282" cy="405" rx="7" ry="6" fill="rgba(255,255,255,.22)" />
+            <ellipse cx="282" cy="424" rx="7" ry="5" fill="#e89090" />
+            <path d="M272,430 Q282,440 292,430" stroke="#c06050" stroke-width="2.5" fill="none" stroke-linecap="round" />
+            <line x1="208" y1="422" x2="265" y2="424" stroke="rgba(255,255,255,.6)" stroke-width="2" />
+            <line x1="299" y1="424" x2="358" y2="422" stroke="rgba(255,255,255,.6)" stroke-width="2" />
+          </svg>
+        </div>
+      </div>
+      <div class="auth-form-side">
+        <div class="auth-card">
+          <h2>Customer Login</h2>
+          <div class="f-group"><label>Email</label><input type="email" id="ci-email" placeholder="you@email.com" /></div>
+          <div class="f-group"><label>Password</label><input type="password" id="ci-pass" placeholder="••••••••" /></div>
+          <div class="check-row">
+            <label><input type="checkbox" id="ci-terms" /> Agree to terms &amp; conditions</label>
+            <span class="link-sm">Forgot password?</span>
+          </div>
+          <hr class="divider" />
+          <div class="btn-row">
+            <button class="btn btn-terra" id="btn-cust-login" onclick="custLogin()">Sign In</button>
+            <button class="btn btn-ghost" onclick="show('pg-cust-signup')">Sign Up</button>
+          </div>
+          <div style="text-align:center"><button class="btn-back" onclick="goBack()">← Back to home</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+  PAGE: CUSTOMER SIGNUP
+══════════════════════════════════════════════════ -->
+  <div id="pg-cust-signup" class="page">
+    <div class="auth-wrap">
+      <div class="auth-panel">
+        <div class="ap-brand">
+          <div class="wordmark">Meowly</div>
+          <div class="tagline">Create your account</div>
+        </div>
+        <div class="ap-illo">
+          <svg viewBox="0 0 560 520" xmlns="http://www.w3.org/2000/svg" style="animation:sway 5s ease-in-out infinite;">
+            <ellipse cx="280" cy="510" rx="220" ry="14" fill="rgba(0,0,0,.14)" />
+            <path d="M248 310 Q240 380 235 510 L325 510 Q320 380 312 310 Z" fill="#5d3a1a" />
+            <ellipse cx="280" cy="260" rx="195" ry="175" fill="#2d6a30" />
+            <ellipse cx="280" cy="210" rx="170" ry="155" fill="#43a047" />
+            <ellipse cx="255" cy="175" rx="140" ry="130" fill="#4caf50" />
+            <ellipse cx="268" cy="128" rx="85" ry="78" fill="#66bb6a" />
+            <ellipse cx="282" cy="490" rx="82" ry="66" fill="#f5c98a" />
+            <ellipse cx="282" cy="498" rx="52" ry="40" fill="#fad9a8" />
+            <path d="M358 470 Q415 420 395 370 Q380 340 365 360" stroke="#f5c98a" stroke-width="22" fill="none" stroke-linecap="round" />
+            <ellipse cx="282" cy="408" rx="65" ry="62" fill="#f5c98a" />
+            <polygon points="228,374 208,334 252,362" fill="#f5c98a" />
+            <polygon points="336,374 356,334 312,362" fill="#f5c98a" />
+            <rect x="226" y="398" width="36" height="22" rx="8" fill="#111" />
+            <rect x="270" y="398" width="36" height="22" rx="8" fill="#111" />
+            <line x1="262" y1="408" x2="270" y2="408" stroke="#333" stroke-width="3" />
+            <ellipse cx="282" cy="424" rx="7" ry="5" fill="#e89090" />
+            <path d="M272,430 Q282,440 292,430" stroke="#c06050" stroke-width="2.5" fill="none" stroke-linecap="round" />
+          </svg>
+        </div>
+      </div>
+      <div class="auth-form-side">
+        <div class="auth-card" style="max-width:460px;">
+          <h2>Create Account</h2>
+          <div class="f-row">
+            <div class="f-group"><label>First Name</label><input type="text" id="cr-fn" placeholder="Juan" /></div>
+            <div class="f-group"><label>Last Name</label><input type="text" id="cr-ln" placeholder="dela Cruz" /></div>
+          </div>
+          <div class="f-row">
+            <div class="f-group"><label>Date of Birth</label><input type="date" id="cr-dob" /></div>
+            <div class="f-group"><label>Gender</label>
+              <select id="cr-gen">
+                <option value="">Select…</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="f-group"><label>Email</label><input type="email" id="cr-email" placeholder="you@email.com" /></div>
+          <div class="f-group"><label>Password</label><input type="password" id="cr-pass" placeholder="Minimum 6 characters" /></div>
+          <hr class="divider" />
+          <div class="btn-row">
+            <button class="btn btn-ghost" onclick="show('pg-cust-login')">Sign In</button>
+            <button class="btn btn-terra" id="btn-cust-signup" onclick="custSignUp()">Create Account</button>
+          </div>
+          <div style="text-align:center"><button class="btn-back" onclick="goBack()">← Back to home</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+  PAGE: CUSTOMER WELCOME
+══════════════════════════════════════════════════ -->
+  <div id="pg-cust-welcome" class="page cust-welcome">
+    <div class="cust-welcome-bg">
+      <div style="position:absolute;top:-120px;right:-120px;width:500px;height:500px;border-radius:50%;background:radial-gradient(var(--sage-pale),transparent 70%);"></div>
+      <div style="position:absolute;bottom:-100px;left:-100px;width:420px;height:420px;border-radius:50%;background:radial-gradient(var(--terra-pale),transparent 70%);"></div>
+    </div>
+    <div style="font-size:4rem;margin-bottom:.8rem;animation:float 3s ease-in-out infinite;">🐾</div>
+    <h2 style="font-family:Fraunces,serif;font-size:clamp(1.8rem,4vw,3rem);text-align:center;color:var(--ink);" id="cw-name">Welcome!</h2>
+    <p style="color:var(--muted);margin:.5rem 0 2rem;font-weight:500;text-align:center;">What would you like to do today?</p>
+    <div class="role-grid" style="max-width:420px;width:100%;">
+      <div class="role-btn" onclick="custSelectSvc('appointment')">
+        <div class="r-icon">📅</div>
+        <div class="r-title">Appointment</div>
+        <div class="r-sub">Book a service</div>
+      </div>
+      <div class="role-btn" onclick="custSelectSvc('store')">
+        <div class="r-icon">🛒</div>
+        <div class="r-title">Pet Store</div>
+        <div class="r-sub">Browse products</div>
+      </div>
+    </div>
+    <button class="btn-back" onclick="logout()" style="margin-top:2rem;">Sign Out</button>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+  PAGE: CUSTOMER APPOINTMENT
+══════════════════════════════════════════════════ -->
+  <div id="pg-cust-appt" class="page cust-layout">
+    <div class="cust-topbar">
+      <button class="btn btn-ghost btn-sm" onclick="showCustWelcome()">←</button>
+      <span class="cust-topbar-title">Book an Appointment</span>
+      <button class="btn btn-ghost btn-sm" onclick="logout()">Sign Out</button>
+    </div>
+    <div class="cust-body">
+      <div class="svc-grid">
+        <div class="svc-card">
+          <h3>Pet Grooming</h3>
+          <div class="svc-info">Mon – Fri &nbsp;·&nbsp; 9:00 AM – 5:00 PM</div>
+          <svg class="svc-illo" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <rect x="15" y="78" width="90" height="28" rx="14" fill="#c49a5a" />
+            <rect x="10" y="72" width="100" height="14" rx="5" fill="#d4a96a" />
+            <ellipse cx="60" cy="68" rx="28" ry="18" fill="#d4a96a" />
+            <ellipse cx="60" cy="52" rx="18" ry="16" fill="#d4a96a" />
+            <ellipse cx="46" cy="47" rx="8" ry="12" fill="#c49a5a" transform="rotate(-15,46,47)" />
+            <ellipse cx="74" cy="47" rx="8" ry="12" fill="#c49a5a" transform="rotate(15,74,47)" />
+            <circle cx="54" cy="50" r="3" fill="#333" />
+            <circle cx="66" cy="50" r="3" fill="#333" />
+            <ellipse cx="60" cy="58" rx="4" ry="3" fill="#333" />
+            <rect x="47" y="62" width="26" height="6" rx="3" fill="#e67e22" />
+            <line x1="95" y1="20" x2="95" y2="62" stroke="#888" stroke-width="4" />
+            <rect x="85" y="57" width="20" height="10" rx="5" fill="#aaa" />
+            <circle cx="88" cy="72" r="2.5" fill="#64b5f6" opacity=".8" />
+            <circle cx="95" cy="75" r="2" fill="#64b5f6" opacity=".7" />
+            <circle cx="102" cy="71" r="2.5" fill="#64b5f6" opacity=".8" />
+          </svg>
+          <button class="svc-book-btn" onclick="custBook('grooming')">Book Now</button>
+        </div>
+        <div class="svc-card">
+          <h3>Pet Clinic</h3>
+          <div class="svc-info">Open 24 / 7</div>
+          <svg class="svc-illo" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="60,12 12,52 108,52" fill="#f5a623" />
+            <rect x="18" y="50" width="84" height="58" fill="#f5a623" />
+            <circle cx="60" cy="73" r="14" fill="#6c3db2" />
+            <circle cx="46" cy="60" r="6" fill="#6c3db2" />
+            <circle cx="74" cy="60" r="6" fill="#6c3db2" />
+            <circle cx="39" cy="70" r="5" fill="#6c3db2" />
+            <circle cx="81" cy="70" r="5" fill="#6c3db2" />
+            <rect x="55" y="86" width="10" height="18" rx="3" fill="#e91e8c" />
+            <rect x="49" y="92" width="22" height="8" rx="3" fill="#e91e8c" />
+          </svg>
+          <button class="svc-book-btn" onclick="custBook('clinic')">Book Now</button>
+        </div>
+      </div>
+      <div id="ca-form-area" style="display:none;">
+        <div class="booking-panel">
+          <div class="booking-ph">
+            <h3 id="ca-service-label">Pet Grooming</h3>
+            <span class="badge badge-amber">New Booking</span>
+          </div>
+          <div class="booking-pb">
+            <div class="booking-grid">
+              <div class="f-group"><label>Name of Owner</label><input type="text" id="ca-owner" /></div>
+              <div class="f-group"><label>Date &amp; Time</label><input type="datetime-local" id="ca-dt" /></div>
+              <div class="f-group"><label>Name of Pet</label><input type="text" id="ca-pet" placeholder="Buddy" /></div>
+              <div class="f-group"><label>Service</label><input type="text" id="ca-service-val" readonly style="cursor:not-allowed;opacity:.7;" /></div>
+              <div class="f-group"><label>Type of Pet</label><input type="text" id="ca-type" placeholder="Dog, Cat, Bird…" /></div>
+              <div class="f-group"><label>Contact Number</label><input type="tel" id="ca-contact" placeholder="+63 9XX XXX XXXX" /></div>
+            </div>
+            <div class="booking-actions">
+              <button class="btn btn-ghost" onclick="custCancelBook()">Cancel</button>
+              <button class="btn btn-sage" onclick="custConfirmBook()">Confirm &amp; Pay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+  PAGE: CUSTOMER STORE
+══════════════════════════════════════════════════ -->
+  <div id="pg-cust-store" class="page cust-layout">
+    <div class="cust-topbar">
+      <button class="btn btn-ghost btn-sm" onclick="showCustWelcome()">←</button>
+      <span class="cust-topbar-title">🛒 Pet Store</span>
+      <button class="btn btn-ghost btn-sm" onclick="logout()">Sign Out</button>
+    </div>
+    <div class="cust-store-wrap">
+      <div id="cust-cat-strip" class="cat-strip" style="margin-bottom:1.2rem;"></div>
+      <div id="cust-product-grid" class="cust-product-grid"></div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+  PAGE: EMPLOYEE DASHBOARD
+══════════════════════════════════════════════════ -->
+  <div id="pg-emp-dash" class="page" style="flex-direction:row;">
+
+    <div id="sb-overlay" class="sb-overlay" onclick="closeSidebar()"></div>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sb-logo">
+        <div class="w">Meowly</div>
+        <div class="s">Employee Portal</div>
+      </div>
+      <nav class="sb-nav">
+        <div class="nav-label">Main</div>
+        <div class="nav-item active" data-nav="overview" onclick="navTo('overview')"><span class="ni">🏠</span> Overview</div>
+        <div class="nav-item" data-nav="appointments" onclick="navTo('appointments')">
+          <span class="ni">📅</span> Appointments
+          <span class="nav-badge" id="nb-appt" style="display:none;">0</span>
+        </div>
+        <div class="nav-label">Management</div>
+        <div class="nav-item" data-nav="store" onclick="navTo('store')"><span class="ni">🛒</span> Pet Store</div>
+        <div class="nav-item" data-nav="stock" onclick="navTo('stock')"><span class="ni">📦</span> Stock Management</div>
+        <div class="nav-item" data-nav="customers" onclick="navTo('customers')"><span class="ni">👥</span> Customers</div>
+        <div class="nav-item" data-nav="employees" onclick="navTo('employees')"><span class="ni">👔</span> Employees</div>
+      </nav>
+      <div class="sb-footer">
+        <div class="emp-chip">
+          <div class="emp-av" id="sb-avatar">??</div>
+          <div class="emp-info">
+            <div class="en" id="sb-name">Employee</div>
+            <div class="ei" id="sb-empid">—</div>
+          </div>
+        </div>
+        <button class="btn-logout-sb" onclick="logout()">Sign Out</button>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <div class="main-content">
+      <header class="topbar">
+        <button class="tb-menu" onclick="toggleSidebar()">☰</button>
+        <div class="tb-title" id="tb-title">Overview</div>
+        <div class="tb-search">🔍 Search…</div>
+        <div class="tb-date" id="tb-date"></div>
+      </header>
+
+      <div class="page-body">
+
+        <!-- OVERVIEW -->
+        <div id="sec-overview" class="dash-sec">
+          <div class="stat-row">
+            <div class="stat-card c1">
+              <div class="stat-ico">📋</div>
+              <div class="stat-lbl">Total Bookings</div>
+              <div class="stat-val" id="ov-bk">0</div>
+              <div class="stat-sub">All time</div>
+            </div>
+            <div class="stat-card c2">
+              <div class="stat-ico">⏳</div>
+              <div class="stat-lbl">Pending</div>
+              <div class="stat-val" id="ov-pd">0</div>
+              <div class="stat-sub">Needs action</div>
+            </div>
+            <div class="stat-card c3">
+              <div class="stat-ico">👥</div>
+              <div class="stat-lbl">Customers</div>
+              <div class="stat-val" id="ov-cu">0</div>
+              <div class="stat-sub">Registered</div>
+            </div>
+            <div class="stat-card c4">
+              <div class="stat-ico">📆</div>
+              <div class="stat-lbl">Today</div>
+              <div class="stat-val" id="ov-td">0</div>
+              <div class="stat-sub">Appointments</div>
+            </div>
+          </div>
+          <div class="g2">
+            <div class="panel">
+              <div class="panel-head">
+                <h3>Recent Bookings</h3>
+                <button class="btn btn-ghost btn-sm" onclick="navTo('appointments')">View all</button>
+              </div>
+              <div class="tbl-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>ID</th><th>Owner</th><th>Pet</th><th>Service</th><th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody id="ov-recent"></tbody>
+                </table>
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:1.2rem;">
+              <div class="panel">
+                <div class="panel-head"><h3>Upcoming</h3></div>
+                <div class="panel-body" style="padding-top:.4rem;padding-bottom:.4rem;">
+                  <ul class="mini-list" id="ov-upcoming"></ul>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-head"><h3>⚠️ Low Stock Alert</h3></div>
+                <div class="panel-body" style="padding-top:.4rem;padding-bottom:.4rem;">
+                  <ul class="mini-list" id="ov-lowstock"></ul>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-head"><h3>Quick Actions</h3></div>
+                <div class="panel-body">
+                  <div class="action-grid">
+                    <div class="action-btn" onclick="navTo('appointments')">
+                      <div class="a-ico">📅</div><div class="a-lbl">New Booking</div>
+                    </div>
+                    <div class="action-btn" onclick="openAddProduct()">
+                      <div class="a-ico">➕</div><div class="a-lbl">Add Product</div>
+                    </div>
+                    <div class="action-btn" onclick="navTo('stock')">
+                      <div class="a-ico">📦</div><div class="a-lbl">Stock Mgmt</div>
+                    </div>
+                    <div class="action-btn" onclick="navTo('customers')">
+                      <div class="a-ico">👥</div><div class="a-lbl">Customers</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- APPOINTMENTS -->
+        <div id="sec-appointments" class="dash-sec" style="display:none;">
+          <div class="sec-hrow">
+            <div>
+              <h2>Appointments</h2>
+              <p id="appt-count">0 records</p>
+            </div>
+          </div>
+          <div class="svc-grid" style="margin-bottom:1.5rem;">
+            <div class="svc-card">
+              <h3>Pet Grooming</h3>
+              <div class="svc-info">Mon–Fri · 9am–5pm</div>
+              <svg class="svc-illo" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15" y="78" width="90" height="28" rx="14" fill="#c49a5a" />
+                <rect x="10" y="72" width="100" height="14" rx="5" fill="#d4a96a" />
+                <ellipse cx="60" cy="68" rx="28" ry="18" fill="#d4a96a" />
+                <ellipse cx="60" cy="52" rx="18" ry="16" fill="#d4a96a" />
+                <ellipse cx="46" cy="47" rx="8" ry="12" fill="#c49a5a" transform="rotate(-15,46,47)" />
+                <ellipse cx="74" cy="47" rx="8" ry="12" fill="#c49a5a" transform="rotate(15,74,47)" />
+                <circle cx="54" cy="50" r="3" fill="#333" />
+                <circle cx="66" cy="50" r="3" fill="#333" />
+                <ellipse cx="60" cy="58" rx="4" ry="3" fill="#333" />
+                <line x1="95" y1="20" x2="95" y2="62" stroke="#888" stroke-width="4" />
+                <rect x="85" y="57" width="20" height="10" rx="5" fill="#aaa" />
+                <circle cx="95" cy="72" r="2.5" fill="#64b5f6" opacity=".8" />
+              </svg>
+              <button class="svc-book-btn" onclick="empBook('grooming')">+ Add Booking</button>
+            </div>
+            <div class="svc-card">
+              <h3>Pet Clinic</h3>
+              <div class="svc-info">Open 24/7</div>
+              <svg class="svc-illo" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="60,12 12,52 108,52" fill="#f5a623" />
+                <rect x="18" y="50" width="84" height="58" fill="#f5a623" />
+                <circle cx="60" cy="73" r="14" fill="#6c3db2" />
+                <circle cx="46" cy="60" r="6" fill="#6c3db2" />
+                <circle cx="74" cy="60" r="6" fill="#6c3db2" />
+                <circle cx="39" cy="70" r="5" fill="#6c3db2" />
+                <circle cx="81" cy="70" r="5" fill="#6c3db2" />
+                <rect x="55" y="86" width="10" height="18" rx="3" fill="#e91e8c" />
+                <rect x="49" y="92" width="22" height="8" rx="3" fill="#e91e8c" />
+              </svg>
+              <button class="svc-book-btn" onclick="empBook('clinic')">+ Add Booking</button>
+            </div>
+          </div>
+          <div id="ea-form-area" style="display:none;margin-bottom:1.5rem;">
+            <div class="booking-panel">
+              <div class="booking-ph">
+                <h3 id="ea-service-label">Pet Grooming</h3>
+                <span class="badge badge-sage">Staff Entry</span>
+              </div>
+              <div class="booking-pb">
+                <div class="booking-grid">
+                  <div class="f-group"><label>Name of Owner</label><input type="text" id="ea-owner" /></div>
+                  <div class="f-group"><label>Date &amp; Time</label><input type="datetime-local" id="ea-dt" /></div>
+                  <div class="f-group"><label>Name of Pet</label><input type="text" id="ea-pet" placeholder="Buddy" /></div>
+                  <div class="f-group"><label>Service</label><input type="text" id="ea-service-val" readonly style="cursor:not-allowed;opacity:.7;" /></div>
+                  <div class="f-group"><label>Type of Pet</label><input type="text" id="ea-type" placeholder="Dog, Cat, Bird…" /></div>
+                  <div class="f-group"><label>Payment Method</label>
+                    <select id="ea-pay">
+                      <option value="">Select…</option>
+                      <option>Cash</option>
+                      <option>GCash</option>
+                      <option>Maya</option>
+                      <option>Credit / Debit Card</option>
+                    </select>
+                  </div>
+                  <div class="f-group"><label>Contact Number</label><input type="tel" id="ea-contact" placeholder="+63 9XX XXX XXXX" /></div>
+                </div>
+                <div class="booking-actions">
+                  <button class="btn btn-ghost" onclick="empCancelBook()">Cancel</button>
+                  <button class="btn btn-sage" onclick="empConfirmBook()">Add Booking</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-head">
+              <div class="pill-tabs">
+                <button class="pill-tab active" data-f="all"      onclick="loadAppointments('all')">All</button>
+                <button class="pill-tab"         data-f="grooming" onclick="loadAppointments('grooming')">Grooming</button>
+                <button class="pill-tab"         data-f="clinic"   onclick="loadAppointments('clinic')">Clinic</button>
+                <button class="pill-tab"         data-f="pending"  onclick="loadAppointments('pending')">Pending</button>
+              </div>
+            </div>
+            <div class="tbl-wrap">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>ID</th><th>Owner</th><th>Pet</th><th>Service</th>
+                    <th>Date &amp; Time</th><th>Payment</th><th>Status</th><th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="appt-tbody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- PET STORE -->
+        <div id="sec-store" class="dash-sec" style="display:none;">
+          <div class="sec-hrow">
+            <div>
+              <h2>Pet Store</h2>
+              <p id="store-count">0 items</p>
+            </div>
+            <button class="btn btn-sage" onclick="openAddProduct()">➕ Add Product</button>
+          </div>
+          <div id="store-cat-strip" class="cat-strip"></div>
+          <div id="prod-grid" class="product-grid"></div>
+        </div>
+
+        <!-- STOCK MANAGEMENT -->
+        <div id="sec-stock" class="dash-sec" style="display:none;">
+          <div class="sec-hrow">
+            <div>
+              <h2>Stock Management</h2>
+              <p>Adjust inventory levels for all products.</p>
+            </div>
+            <button class="btn btn-sage" onclick="saveBulkStock()">💾 Save All</button>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:1.5rem;">
+            <div class="panel" style="text-align:center;padding:1.2rem;">
+              <div style="font-size:1.8rem;font-weight:900;font-family:Fraunces,serif;color:var(--ink)" id="stock-summary-total">0</div>
+              <div style="font-size:.75rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.07em;margin-top:.3rem">Total Products</div>
+            </div>
+            <div class="panel" style="text-align:center;padding:1.2rem;border-bottom:3px solid var(--amber);">
+              <div style="font-size:1.8rem;font-weight:900;font-family:Fraunces,serif;color:var(--amber)" id="stock-summary-low">0</div>
+              <div style="font-size:.75rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.07em;margin-top:.3rem">Low Stock</div>
+            </div>
+            <div class="panel" style="text-align:center;padding:1.2rem;border-bottom:3px solid var(--red);">
+              <div style="font-size:1.8rem;font-weight:900;font-family:Fraunces,serif;color:var(--red)" id="stock-summary-out">0</div>
+              <div style="font-size:.75rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.07em;margin-top:.3rem">Out of Stock</div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-head">
+              <div class="pill-tabs">
+                <button class="pill-tab active" data-f="all" onclick="loadStock('all')">All</button>
+                <button class="pill-tab"        data-f="low" onclick="loadStock('low')">⚠️ Low Stock</button>
+                <button class="pill-tab"        data-f="out" onclick="loadStock('out')">🔴 Out of Stock</button>
+              </div>
+              <button class="btn btn-sage btn-sm" onclick="saveBulkStock()">Save All Changes</button>
+            </div>
+            <div class="tbl-wrap">
+              <table class="stock-table" style="width:100%;">
+                <thead>
+                  <tr>
+                    <th>Product</th><th>Price</th><th>Stock Qty</th><th>Status</th><th>Quick Adjust</th>
+                  </tr>
+                </thead>
+                <tbody id="stock-tbody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- CUSTOMERS -->
+        <div id="sec-customers" class="dash-sec" style="display:none;">
+          <div class="sec-hrow">
+            <div>
+              <h2>Customers</h2>
+              <p id="cust-count">0 registered</p>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="tbl-wrap">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Name</th><th>Email</th><th>Gender</th><th>Date of Birth</th><th>Joined</th>
+                  </tr>
+                </thead>
+                <tbody id="cust-tbody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- EMPLOYEES -->
+        <div id="sec-employees" class="dash-sec" style="display:none;">
+          <div class="sec-hrow">
+            <div>
+              <h2>Staff Directory</h2>
+              <p id="emp-count">0 on staff</p>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="tbl-wrap">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Name</th><th>Employee ID</th><th>Email</th><th>Gender</th><th>Joined</th>
+                  </tr>
+                </thead>
+                <tbody id="emp-tbody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+  DRAWER — ADD / EDIT PRODUCT
+══════════════════════════════════════════════════ -->
+  <div id="drawer" class="drawer-overlay" onclick="e=>e.target===this&&closeDrawer()">
+    <div class="drawer" onclick="event.stopPropagation()">
+      <div class="drawer-head">
+        <h3 id="drawer-title">Add New Product</h3>
+        <button class="drawer-close" onclick="closeDrawer()">✕</button>
+      </div>
+      <div class="drawer-body">
+        <div class="f-group">
+          <label>Product Image</label>
+          <div class="img-upload" id="img-upload-area">
+            <input type="file" accept="image/*" onchange="handleImgUpload(this)" />
+            <div class="iu-icon">📷</div>
+            <div class="iu-txt">Click to upload image</div>
+            <div class="iu-sub">JPG, PNG, WEBP · Max 5MB</div>
+          </div>
+          <img id="img-preview" class="img-preview" alt="Preview" />
+        </div>
+        <div class="f-group">
+          <label>Product Name <span style="color:var(--red)">*</span></label>
+          <input type="text" id="dp-name" placeholder="e.g. Premium Cat Wet Food" />
+        </div>
+        <div class="f-row">
+          <div class="f-group">
+            <label>Category <span style="color:var(--red)">*</span></label>
+            <select id="dp-cat">
+              <option value="food">🥫 Food &amp; Treats</option>
+              <option value="grooming">✂️ Grooming</option>
+              <option value="health">💊 Health &amp; Meds</option>
+              <option value="toys">🦴 Toys &amp; Play</option>
+              <option value="accessories">🎀 Accessories</option>
+              <option value="housing">🏠 Housing &amp; Beds</option>
+            </select>
+          </div>
+          <div class="f-group">
+            <label>Emoji Icon</label>
+            <input type="text" id="dp-icon" placeholder="🐾 (optional)" />
+          </div>
+        </div>
+        <div class="f-row">
+          <div class="f-group">
+            <label>Price (₱) <span style="color:var(--red)">*</span></label>
+            <input type="number" id="dp-price" placeholder="0.00" min="0" step="0.01" />
+          </div>
+          <div class="f-group">
+            <label>Initial Stock <span style="color:var(--red)">*</span></label>
+            <input type="number" id="dp-stock" placeholder="0" min="0" />
+          </div>
+        </div>
+        <div class="f-group">
+          <label>Description</label>
+          <textarea id="dp-desc" placeholder="Brief product description…"></textarea>
+        </div>
+      </div>
+      <div class="drawer-foot">
+        <button class="btn btn-ghost" onclick="closeDrawer()">Cancel</button>
+        <button class="btn btn-sage" id="drawer-submit-btn" onclick="submitProduct()">Add Product</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+  MODAL — Employee ID
+══════════════════════════════════════════════════ -->
+  <div id="modal-empid" class="overlay">
+    <div class="modal-box">
+      <div style="font-size:3rem;margin-bottom:.6rem;">🎉</div>
+      <h3>Account Created!</h3>
+      <p>Your Employee ID has been generated. An email confirmation is being sent — keep this ID safe for logging in!</p>
+      <div class="id-badge">
+        <div class="lbl">Your Employee ID</div>
+        <div class="val" id="modal-id-val">10001234</div>
+      </div>
+      <button class="btn btn-sage btn-full" onclick="closeEmpModal()">Got it — take me to login</button>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+  MODAL — Delete Confirm
+══════════════════════════════════════════════════ -->
+  <div id="modal-delete" class="overlay">
+    <div class="confirm-box">
+      <div style="font-size:2.5rem;margin-bottom:.6rem;">🗑️</div>
+      <h3 style="font-family:Fraunces,serif;font-size:1.3rem;margin-bottom:.5rem;">Delete Product?</h3>
+      <p style="font-size:.88rem;color:var(--muted);margin-bottom:1.3rem;">
+        Are you sure you want to delete <strong id="del-product-name">this product</strong>? This cannot be undone.
+      </p>
+      <div style="display:flex;gap:.8rem;justify-content:center;">
+        <button class="btn btn-ghost" onclick="cancelDelete()">Cancel</button>
+        <button class="btn btn-red"   onclick="executeDelete()">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+  MODAL — Payment
+══════════════════════════════════════════════════ -->
+  <div id="modal-payment" class="overlay">
+    <div class="modal-box" style="max-width:420px;width:95%;text-align:left;">
+
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.2rem;">
+        <h3 style="font-family:Fraunces,serif;font-size:1.2rem;color:var(--sage)">🐾 Meowly Payment</h3>
+        <button onclick="closePaymentModal()" style="background:none;border:none;font-size:1.3rem;cursor:pointer;color:var(--muted)">✕</button>
+      </div>
+
+      <p id="pay-description" style="font-size:.88rem;color:var(--muted);margin-bottom:1rem;"></p>
+
+      <div style="margin-bottom:1.2rem;">
+        <label style="font-size:.82rem;font-weight:600;color:var(--ink);display:block;margin-bottom:.3rem;">Amount (₱)</label>
+        <input id="pay-amount" type="number" min="1" step="0.01" value="300"
+          style="width:100%;padding:.6rem .8rem;border:1.5px solid var(--cream-3);border-radius:var(--r-xs);font-size:1rem;background:var(--cream);box-sizing:border-box;" />
+        <p style="font-size:.75rem;color:var(--muted);margin-top:.3rem;">You can change this amount before paying.</p>
+      </div>
+
+      <div id="pay-actions" style="display:flex;flex-direction:column;gap:.7rem;">
+        <button id="btn-pay-qr" onclick="payViaQR()"
+          style="width:100%;padding:.8rem;background:var(--sage);color:#fff;border:none;border-radius:var(--r-xs);font-size:.95rem;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.5rem;">
+          📱 Pay via QR Code
+          <span style="font-size:.75rem;font-weight:400;opacity:.85">(GCash, Maya, BPI, etc.)</span>
+        </button>
+        <button id="btn-pay-link" onclick="payViaLink()"
+          style="width:100%;padding:.8rem;background:var(--terra);color:#fff;border:none;border-radius:var(--r-xs);font-size:.95rem;font-weight:600;cursor:pointer;">
+          🔗 Pay via Payment Link
+        </button>
+      </div>
+
+      <div id="pay-qr-area" style="display:none;text-align:center;">
+        <div id="pay-qr-image"></div>
+        <p style="font-size:.82rem;color:var(--muted);margin-top:.8rem;">⏳ Waiting for payment confirmation...</p>
+        <button onclick="closePaymentModal()"
+          style="margin-top:.8rem;padding:.5rem 1.2rem;background:none;border:1.5px solid var(--cream-3);border-radius:var(--r-xs);font-size:.82rem;cursor:pointer;color:var(--muted);">
+          Cancel
+        </button>
+      </div>
+
+      <div id="pay-link-area" style="display:none;text-align:center;padding:1rem 0;">
+        <p style="font-size:.9rem;margin-bottom:.8rem;">A payment page has been opened in a new tab.</p>
+        <p style="font-size:.8rem;color:var(--muted);margin-bottom:1rem;">Reference: <strong id="pay-link-ref"></strong></p>
+        <a id="pay-link-btn" href="#" target="_blank"
+          style="display:inline-block;padding:.6rem 1.4rem;background:var(--terra);color:#fff;border-radius:var(--r-xs);text-decoration:none;font-size:.88rem;font-weight:600;margin-bottom:1rem;">
+          Open Payment Page Again
+        </a>
+        <br />
+        <button onclick="confirmPaymentManually()"
+          style="padding:.6rem 1.4rem;background:var(--sage);color:#fff;border:none;border-radius:var(--r-xs);font-size:.88rem;font-weight:600;cursor:pointer;">
+          ✓ I've Completed Payment
+        </button>
+      </div>
+
+      <div id="pay-success-area" style="display:none;text-align:center;padding:1.5rem 0;">
+        <div style="font-size:3rem;margin-bottom:.5rem;">🎉</div>
+        <h3 style="font-family:Fraunces,serif;color:var(--sage);margin-bottom:.4rem;">Payment Confirmed!</h3>
+        <p style="font-size:.88rem;color:var(--muted);">Your booking has been automatically confirmed.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    const API_BASE = "http://localhost:5074/api";
+  </script>
+  <script src="../scripts/app.js"></script>
+</body>
+
+</html>
